@@ -1,0 +1,54 @@
+@import 'landing.css';
+
+.courses__hero{
+    background-image: url('../../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 59vh;
+    color: var(--color-text-light);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px;
+}
+.courses__hero div{
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 650px){
+    .courses__hero{
+        align-items: center;
+    }
+    .courses__hero div{
+        margin: 0%;
+    }
+}
+
+
+.courses__course{
+    display: flex;
+    flex-direction: column;
+    padding: 22px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (min-width: 760px){
+    .courses__course{
+        flex-direction: row;
+    }
+}
+.courses__cover-course{
+    flex-basis: 30%;
+}
+.courses__text-course{
+    padding: 20px;
+    flex-basis: calc(60% - 20px);
+}
+.courses__text-course p{
+    margin-bottom: 12px;
+}
+.courses__text-course p span{
+    font-weight: normal;
+}
+.courses__title{
+    margin-bottom: 20px;
+}

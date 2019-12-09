@@ -1,0 +1,49 @@
+@import 'landing.css';
+
+.about-us__hero{
+    background-image: url('../../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 59vh;
+    color: var(--color-text-light);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 12px;
+}
+.about-us__hero div{
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 650px){
+    .about-us__hero{
+        align-items: center;
+    }
+    .about-us__hero div{
+        margin: 0%;
+    }
+}
+.about-us{
+    margin-bottom: 30px;
+}
+
+.about-us__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+@media screen and (min-width: 800px){
+    .about-us__content{
+        flex-direction: row;
+    }
+}
+.about-us__cover{
+    flex-basis: 55%;
+    padding: 20px;
+}
+.about-us__text{
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: calc(45% - 30px);
+}

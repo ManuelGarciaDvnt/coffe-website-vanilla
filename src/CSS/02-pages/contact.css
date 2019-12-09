@@ -1,0 +1,85 @@
+@import 'about-us.css';
+
+.contact__group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact__cover{
+    flex-basis: 100%;
+    margin-bottom: 12px;
+}
+.contact__form-container{
+    flex-basis: 85%;
+    margin-bottom: 60px;
+}
+.contact__form{
+    background-color: var(--color-text-light);
+    padding: 50px;
+    box-shadow: 0px 0px 6px var(--color-gray);
+}
+@media screen and (min-width: 768px){
+    .contact__form-container{
+        margin-top: -170px;
+    }
+}
+.contact__input-group{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.contact__input-group label{
+    position: absolute;
+    top: -3px;
+    padding: 15px;
+    font-size: 16px;
+    transition: all ease-in-out .2s;
+}
+.contact__input-group input{
+    padding: 15px;
+    border: none;
+    border-bottom: solid 2px var(--color-gray);
+    outline: none;
+    font-family: 'Hebbo', sans-serif;
+    font-size: 16px;
+}
+.contact__input-group input:focus{
+    border-bottom: solid 2px var(--color-blue);
+}
+.contact__input-group input:focus+label{
+    top: -33px;
+}
+.active{
+    top: -33px!important;
+}
+
+.contact__input-group textarea{
+    padding: 15px;
+    font-family: 'Hebbo', sans-serif;
+    font-size: 16px;
+    min-height: 120px;
+    resize: none;
+    border: solid 2px var(--color-gray);
+    outline: none;
+}
+.contact__input-group textarea:focus{
+    border: solid 2px var(--color-blue);
+}
+
+.contact__button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+@media screen and (min-width: 768px){
+    .contact__button-container{
+        justify-content: flex-end;
+    }
+}
+
+.contact__button-container .button{
+    font-family: 'Hebbo', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
